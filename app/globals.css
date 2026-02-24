@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 폰트 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Inter:wght@400;500;700;900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 240, 240, 245;
+  --font-noto-sans-kr: 'Noto Sans KR', 'Inter', sans-serif;
+  --golf-green: #1B5E20;
+  --fairway-green: #2E7D32;
+  --golf-gold: #F9A825;
+  --sand-beige: #D4B483;
+  --vietnam-red: #DA251D;
+  --sky-blue: #0288D1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 15, 15, 15;
+    --background-end-rgb: 31, 41, 55;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+  font-family: var(--font-noto-sans-kr);
+}
+
+/* 스크롤 동작 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 포커스 스타일 */
+:focus-visible {
+  outline: 2px solid var(--golf-gold);
+  outline-offset: 2px;
+}
+
+/* 선택 텍스트 스타일 */
+::selection {
+  background-color: var(--golf-gold);
+  color: white;
+}
+
+/* 골프 스타일 애니메이션 */
+@keyframes bounce-golf {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(249, 168, 37, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(249, 168, 37, 0.8);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes golf-swing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+}
+
+/* 골프 버튼 스타일 */
+.golf-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.golf-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.golf-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.golf-button:active {
+  transform: scale(0.95);
+}
+
+/* 골프 코스 패턴 배경 */
+.golf-pattern {
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(46, 125, 50, 0.15) 2px, transparent 0),
+    radial-gradient(circle at 75px 75px, rgba(46, 125, 50, 0.1) 2px, transparent 0);
+  background-size: 100px 100px;
+}
+
+/* 애니메이션 설정 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

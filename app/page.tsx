@@ -1,0 +1,28 @@
+import { Header } from '@/components/Header'
+import { Hero } from '@/components/Hero'
+import { GolfPackages } from '@/components/GolfPackages'
+import { Itinerary } from '@/components/Itinerary'
+import { Highlights } from '@/components/Highlights'
+import { Pricing } from '@/components/Pricing'
+import { FAQ } from '@/components/FAQ'
+import { CTA } from '@/components/CTA'
+import { Footer } from '@/components/Footer'
+import { SideNav } from '@/components/SideNav'
+
+export default function Home() {
+  return (
+    <main className="min-h-screen relative">
+      <Header />
+      <SideNav />
+      <Hero />
+      <GolfPackages />
+      <Itinerary />
+      <Highlights />
+      <Pricing />
+      <FAQ />
+      <CTA />
+      <Footer />
+    </main>
+  )
+}
+
