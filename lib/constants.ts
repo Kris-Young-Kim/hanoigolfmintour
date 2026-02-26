@@ -29,7 +29,7 @@ export const GOLF_PACKAGES = [
     weekendSurcharge: 75000,
     singleRoomSurcharge: 37500,
     note: '최고 가성비!',
-    image: 'https://loremflickr.com/800/600/golfer?lock=101',
+    image: 'https://loremflickr.com/800/600/fairway?lock=201',
     highlight: '5성급 호텔',
   },
   {
@@ -45,7 +45,7 @@ export const GOLF_PACKAGES = [
     weekendSurcharge: 67500,
     singleRoomSurcharge: 37500,
     note: '인기 상품!',
-    image: 'https://loremflickr.com/800/600/fairway?lock=102',
+    image: 'https://loremflickr.com/800/600/golfcourse?lock=202',
     highlight: '다양한 코스 선택',
   },
   {
@@ -61,7 +61,7 @@ export const GOLF_PACKAGES = [
     weekendSurcharge: 67500,
     singleRoomSurcharge: 25500,
     note: '4성급 호텔!',
-    image: 'https://loremflickr.com/800/600/golfer?lock=103',
+    image: 'https://loremflickr.com/800/600/fairway?lock=203',
     highlight: '박닌 3색 코스',
   },
   {
@@ -77,7 +77,7 @@ export const GOLF_PACKAGES = [
     weekendSurcharge: 67500,
     singleRoomSurcharge: 37500,
     note: '피닉스 포함!',
-    image: 'https://loremflickr.com/800/600/fairway?lock=104',
+    image: 'https://loremflickr.com/800/600/golfcourse?lock=204',
     highlight: '피닉스 명문 코스',
   },
   {
@@ -93,7 +93,7 @@ export const GOLF_PACKAGES = [
     weekendSurcharge: 60000,
     singleRoomSurcharge: 37500,
     note: 'BRG 프리미엄!',
-    image: 'https://loremflickr.com/800/600/golfer?lock=105',
+    image: 'https://loremflickr.com/800/600/fairway?lock=205',
     highlight: 'BRG 3색 명문',
   },
   {

@@ -9,7 +9,7 @@ import { HoleInOne } from './HoleInOne'
 const HERO_IMAGES = [
   'https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1920&q=80',
   'https://images.unsplash.com/photo-1611374243147-44a702c2d44c?auto=format&fit=crop&w=1920&q=80',
-  'https://loremflickr.com/1920/1080/golfer?lock=777',
+  'https://loremflickr.com/1920/1080/fairway?lock=777',
 ]
 
 export function Hero() {
