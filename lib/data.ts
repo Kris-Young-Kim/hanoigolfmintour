@@ -36,7 +36,7 @@ export const ITINERARY = [
       '석식 후 호텔 귀환',
     ],
     mealInfo: '조식 포함',
-    image: 'https://loremflickr.com/800/600/fairway?lock=302',
+    image: 'https://loremflickr.com/800/600/hanoi,oldquarter/all?lock=312',
     golfInfo: {
       courseName: '패키지별 상이',
       courseType: '18홀 정규',
