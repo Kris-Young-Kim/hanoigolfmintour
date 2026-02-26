@@ -1,6 +1,6 @@
 'use client';
 
-import { APPLICATION_FORM_URL, TOUR_INFO, INCLUDED_ITEMS, EXCLUDED_ITEMS, SURCHARGE_INFO } from '@/lib/constants';
+import { APPLICATION_FORM_URL, TOUR_INFO, INCLUDED_ITEMS, EXCLUDED_ITEMS } from '@/lib/constants';
 import { GolfButton } from './GolfButton';
 
 export function Pricing() {
@@ -72,21 +72,6 @@ export function Pricing() {
                   </li>
                 ))}
               </ul>
-            </div>
-          </div>
-
-          {/* 추가요금 안내 */}
-          <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6 mb-8 border border-gray-200 dark:border-gray-700">
-            <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-2">
-              <span>⚠️</span> 추가요금 안내
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {SURCHARGE_INFO.map((item, index) => (
-                <div key={index} className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{item.label}</p>
-                  <p className="text-lg font-bold text-vietnam-red">{item.amount}</p>
-                </div>
-              ))}
             </div>
           </div>
 
