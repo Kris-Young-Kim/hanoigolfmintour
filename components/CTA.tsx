@@ -1,6 +1,6 @@
 'use client'
 
-import { TOUR_INFO } from '@/lib/constants'
+import { APPLICATION_FORM_URL, TOUR_INFO } from '@/lib/constants'
 import { GolfButton } from './GolfButton'
 import { HoleInOne } from './HoleInOne'
 
@@ -33,7 +33,7 @@ export function CTA() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <GolfButton
-            onClick={() => window.open('https://form.naver.com/response/F86hdXHkmqFym7xNkOGMZw', '_blank')}
+            onClick={() => window.open(APPLICATION_FORM_URL, '_blank')}
             size="lg"
             variant="primary"
             className="bg-golf-gold text-white hover:bg-golf-gold/90"

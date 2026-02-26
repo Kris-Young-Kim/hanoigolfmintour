@@ -1,6 +1,6 @@
 'use client';
 
-import { TOUR_INFO, INCLUDED_ITEMS, EXCLUDED_ITEMS, SURCHARGE_INFO } from '@/lib/constants';
+import { APPLICATION_FORM_URL, TOUR_INFO, INCLUDED_ITEMS, EXCLUDED_ITEMS, SURCHARGE_INFO } from '@/lib/constants';
 import { GolfButton } from './GolfButton';
 
 export function Pricing() {
@@ -92,7 +92,7 @@ export function Pricing() {
 
           <div className="mt-8 text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <GolfButton
-              onClick={() => window.open('https://form.naver.com/response/F86hdXHkmqFym7xNkOGMZw', '_blank')}
+              onClick={() => window.open(APPLICATION_FORM_URL, '_blank')}
               size="lg"
               variant="primary"
             >

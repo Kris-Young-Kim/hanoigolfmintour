@@ -1,6 +1,6 @@
 'use client'
 
-import { TOUR_INFO } from '@/lib/constants'
+import { APPLICATION_FORM_URL, TOUR_INFO } from '@/lib/constants'
 import { GolfButton } from './GolfButton'
 
 export function Footer() {
@@ -90,7 +90,7 @@ export function Footer() {
               </div>
               <div className="pt-4">
                 <GolfButton
-                  onClick={() => window.open('https://form.naver.com/response/F86hdXHkmqFym7xNkOGMZw', '_blank')}
+                  onClick={() => window.open(APPLICATION_FORM_URL, '_blank')}
                   size="sm"
                   variant="secondary"
                   className="w-full"

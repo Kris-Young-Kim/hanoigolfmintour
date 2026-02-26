@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { TOUR_INFO } from '@/lib/constants'
+import { APPLICATION_FORM_URL, TOUR_INFO } from '@/lib/constants'
 import { GolfButton } from './GolfButton'
 import { HoleInOne } from './HoleInOne'
 
@@ -80,7 +80,7 @@ export function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
           <GolfButton
-            onClick={() => window.open('https://form.naver.com/response/F86hdXHkmqFym7xNkOGMZw', '_blank')}
+            onClick={() => window.open(APPLICATION_FORM_URL, '_blank')}
             size="lg"
             variant="primary"
           >

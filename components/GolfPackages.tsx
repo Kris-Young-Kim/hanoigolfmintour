@@ -76,27 +76,17 @@ export function GolfPackages() {
                     </div>
                   </div>
                   <div className="border-t border-gray-100 dark:border-gray-700 pt-4">
-                    <div className="flex items-end justify-between">
-                      <div>
-                        <p className="text-xs text-gray-500 dark:text-gray-400">1인 요금 (4인 기준)</p>
-                        {pkg.price > 0 ? (
-                          <p className="text-2xl font-black text-golf-gold">
-                            ₩{pkg.price.toLocaleString()}
-                          </p>
-                        ) : (
-                          <p className="text-xl font-black text-golf-gold">
-                            {pkg.priceLabel}
-                          </p>
-                        )}
-                      </div>
-                      <div className="text-right text-xs text-gray-500 dark:text-gray-400 space-y-0.5">
-                        {pkg.weekendSurcharge > 0 && (
-                          <p>주말 +₩{pkg.weekendSurcharge.toLocaleString()}</p>
-                        )}
-                        {pkg.singleRoomSurcharge > 0 && (
-                          <p>싱글룸 +₩{pkg.singleRoomSurcharge.toLocaleString()}/박</p>
-                        )}
-                      </div>
+                    <div>
+                      <p className="text-xs text-gray-500 dark:text-gray-400">1인 요금 (4인 기준)</p>
+                      {pkg.price > 0 ? (
+                        <p className="text-2xl font-black text-golf-gold">
+                          ₩{pkg.price.toLocaleString()}
+                        </p>
+                      ) : (
+                        <p className="text-xl font-black text-golf-gold">
+                          {pkg.priceLabel}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>

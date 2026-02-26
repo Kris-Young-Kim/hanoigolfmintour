@@ -2,7 +2,7 @@
 
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { TOUR_INFO } from '@/lib/constants'
+import { APPLICATION_FORM_URL, TOUR_INFO } from '@/lib/constants'
 import { GolfButton } from './GolfButton'
 
 export function Header() {
@@ -93,7 +93,7 @@ export function Header() {
             )}
             <div className="hidden md:block">
               <GolfButton
-                onClick={() => window.open('https://form.naver.com/response/F86hdXHkmqFym7xNkOGMZw', '_blank')}
+                onClick={() => window.open(APPLICATION_FORM_URL, '_blank')}
                 size="md"
               >
                 신청하기
@@ -135,7 +135,7 @@ export function Header() {
               ))}
               <div className="pt-2">
                 <GolfButton
-                  onClick={() => window.open('https://form.naver.com/response/F86hdXHkmqFym7xNkOGMZw', '_blank')}
+                  onClick={() => window.open(APPLICATION_FORM_URL, '_blank')}
                   size="md"
                   className="w-full"
                 >

@@ -1,3 +1,6 @@
+// 투어 신청 폼 URL (네이버 폼)
+export const APPLICATION_FORM_URL = 'https://form.naver.com/response/4F_KD5NAgL7l5lyMZx645g';
+
 // 투어 기본 정보
 export const TOUR_INFO = {
   title: '하노이 골프투어 2026',
