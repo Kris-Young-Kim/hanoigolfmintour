@@ -16,7 +16,7 @@ export const ITINERARY = [
       '석식 후 하노이 야경 산책 (선택)',
     ],
     mealInfo: '기내식',
-    image: 'https://loremflickr.com/800/600/hanoi,night/all?lock=301',
+    image: 'https://loremflickr.com/800/600/hanoi,airport/all?lock=311',
     type: 'travel',
   },
   {
