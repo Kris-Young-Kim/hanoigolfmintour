@@ -29,7 +29,7 @@ export function Pricing() {
               </div>
               <p className="text-xl md:text-2xl mb-2 font-bold">패키지 요금 범위</p>
               <p className="text-5xl md:text-6xl font-black mb-4 drop-shadow-lg">
-                ${TOUR_INFO.priceFrom} ~ ${TOUR_INFO.priceTo}
+                ₩{TOUR_INFO.priceFrom.toLocaleString()} ~ ₩{TOUR_INFO.priceTo.toLocaleString()}
               </p>
               <p className="text-lg text-white/90 font-semibold">{TOUR_INFO.duration} | 4인 행사 기준 | 1인 요금</p>
             </div>

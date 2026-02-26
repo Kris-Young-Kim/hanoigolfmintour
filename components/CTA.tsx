@@ -55,7 +55,7 @@ export function CTA() {
             <span className="text-golf-gold">📅</span> {TOUR_INFO.dateDisplay}
           </p>
           <p className="text-3xl md:text-4xl font-black text-golf-gold">
-            ${TOUR_INFO.priceFrom}~ (USD, 4인 기준)
+            ₩{TOUR_INFO.priceFrom.toLocaleString()}~ (4인 기준)
           </p>
         </div>
       </div>

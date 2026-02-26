@@ -7,9 +7,9 @@ import { HoleInOne } from './HoleInOne'
 
 // 골프투어 히어로 이미지 후보 (순차 폴백)
 const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=1920&q=80',
-  'https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1920&q=80',
-  'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1920&q=80',
+  'https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1920&q=80',
+  'https://images.unsplash.com/photo-1611374243147-44a702c2d44c?auto=format&fit=crop&w=1920&q=80',
+  'https://loremflickr.com/1920/1080/golf,course?lock=777',
 ]
 
 export function Hero() {
@@ -103,7 +103,7 @@ export function Hero() {
               <span className="text-golf-gold">📅</span> 투어 기간: {TOUR_INFO.dateDisplay} ({TOUR_INFO.duration})
             </p>
             <p className="text-2xl md:text-3xl font-black text-golf-gold">
-              ${TOUR_INFO.priceFrom}~ (USD, 4인 기준)
+              ₩{TOUR_INFO.priceFrom.toLocaleString()}~ (4인 기준)
             </p>
           </div>
         </div>

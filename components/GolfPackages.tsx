@@ -81,7 +81,7 @@ export function GolfPackages() {
                         <p className="text-xs text-gray-500 dark:text-gray-400">1인 요금 (4인 기준)</p>
                         {pkg.price > 0 ? (
                           <p className="text-2xl font-black text-golf-gold">
-                            ${pkg.price}
+                            ₩{pkg.price.toLocaleString()}
                           </p>
                         ) : (
                           <p className="text-xl font-black text-golf-gold">
@@ -91,10 +91,10 @@ export function GolfPackages() {
                       </div>
                       <div className="text-right text-xs text-gray-500 dark:text-gray-400 space-y-0.5">
                         {pkg.weekendSurcharge > 0 && (
-                          <p>주말 +${pkg.weekendSurcharge}</p>
+                          <p>주말 +₩{pkg.weekendSurcharge.toLocaleString()}</p>
                         )}
                         {pkg.singleRoomSurcharge > 0 && (
-                          <p>싱글룸 +${pkg.singleRoomSurcharge}/박</p>
+                          <p>싱글룸 +₩{pkg.singleRoomSurcharge.toLocaleString()}/박</p>
                         )}
                       </div>
                     </div>
