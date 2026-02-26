@@ -16,7 +16,7 @@ export const ITINERARY = [
       '석식 후 하노이 야경 산책 (선택)',
     ],
     mealInfo: '기내식',
-    image: 'https://source.unsplash.com/800x600/?hanoi,vietnam,airport',
+    image: 'https://loremflickr.com/800/600/hanoi,night/all?lock=301',
     type: 'travel',
   },
   {
@@ -36,7 +36,7 @@ export const ITINERARY = [
       '석식 후 호텔 귀환',
     ],
     mealInfo: '조식 포함',
-    image: 'https://source.unsplash.com/800x600/?golf,course,morning',
+    image: 'https://loremflickr.com/800/600/fairway?lock=302',
     golfInfo: {
       courseName: '패키지별 상이',
       courseType: '18홀 정규',
@@ -61,7 +61,7 @@ export const ITINERARY = [
       '석식 후 호텔 귀환',
     ],
     mealInfo: '조식 포함',
-    image: 'https://source.unsplash.com/800x600/?hanoi,temple,vietnam',
+    image: 'https://loremflickr.com/800/600/hanoi,temple/all?lock=303',
     golfInfo: {
       courseName: '패키지별 상이',
       courseType: '18홀 정규',
@@ -86,7 +86,7 @@ export const ITINERARY = [
       '석식 후 호텔 귀환',
     ],
     mealInfo: '조식 포함',
-    image: 'https://source.unsplash.com/800x600/?vietnam,shopping,market',
+    image: 'https://loremflickr.com/800/600/vietnam,market/all?lock=304',
     golfInfo: {
       courseName: '패키지별 상이',
       courseType: '18홀 정규',
@@ -109,7 +109,7 @@ export const ITINERARY = [
       '인천 국제공항 도착 및 해산',
     ],
     mealInfo: '조식 + 기내식',
-    image: 'https://source.unsplash.com/800x600/?incheon,airport,travel',
+    image: 'https://loremflickr.com/800/600/airport,travel/all?lock=305',
     type: 'travel',
   },
 ];
